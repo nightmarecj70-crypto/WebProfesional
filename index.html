@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webprofesional - Creador de Páginas Web Inteligente</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 font-black text-2xl tracking-tight">
+                <span class="text-emerald-500">🛠️</span>Webprofesional
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:+522996152757" class="text-xs font-semibold text-slate-400 hover:text-emerald-400 flex items-center gap-2 transition-colors">
+                    <span>📞</span> Soporte: 299 615 2757
+                </a>
+                <a href="https://wa.me/522996152757" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-lg shadow-emerald-600/20 transition-all">
+                    <span>💬</span> Diseñar Ahora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-6 pt-16 pb-12 text-center space-y-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/40 border border-emerald-900/60 px-3 py-1.5 rounded-full">
+            Plataforma Auto-Gestionable No-Code
+        </span>
+        <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
+            Construye tu sitio web profesional en <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">cuestión de minutos</span>
+        </h2>
+        <p class="text-base text-slate-400 max-w-2xl mx-auto">
+            Selecciona el giro de tu comercio, personaliza los módulos integrados y lanza tu plataforma con dominio propio y optimización publicitaria de inmediato.
+        </p>
+
+        <div class="bg-slate-900/50 border border-slate-800 rounded-3xl p-6 sm:p-8 max-w-xl mx-auto text-left space-y-6 shadow-xl mt-8">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+                <span>⚡</span> Configurador de Sitio en Vivo
+            </h3>
+            
+            <div class="space-y-2">
+                <label class="text-xs font-semibold text-slate-300">1. Selecciona el Tipo de Sitio:</label>
+                <select id="tipoSitio" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm font-medium text-slate-200 focus:outline-none focus:border-emerald-500 cursor-pointer">
+                    <option value="sencilla">Página Web Sencilla ($1,500 MXN)</option>
+                    <option value="ecommerce">E-commerce / Tienda de Ventas ($2,500 MXN)</option>
+                    <option value="premium">Premium: Web + Gestión de Redes ($3,500 MXN)</option>
+                </select>
+            </div>
+
+            <div class="bg-slate-950/60 border border-slate-900 rounded-xl p-4 space-y-2.5">
+                <span class="text-[10px] font-bold uppercase text-slate-500 tracking-wider">Beneficios Corporativos Incluidos:</span>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-300">
+                    <div class="flex items-center gap-1.5">🌐 <span class="font-medium">Dominio Propio</span></div>
+                    <div class="flex items-center gap-1.5">🔄 <span class="font-medium">Actualizaciones</span></div>
+                    <div class="flex items-center gap-1.5">📢 <span class="font-medium">Anuncios Listos</span></div>
+                </div>
+            </div>
+
+            <button onclick="enviarCotizacion()" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-black py-3.5 px-4 rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg shadow-emerald-500/10 cursor-pointer text-center block">
+                Generar mi Página Web con un Asesor
+            </button>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-12 space-y-8">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-900 pb-3">🗂️ Modelos Arquitectónicos Pre-diseñados</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden group hover:border-slate-800 transition-all">
+                <div class="h-40 bg-cover bg-center overflow-hidden">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTWd2f5XlG0DHchl82NQXCeU_epDFCxuXwrB9h3ZHmNGCGVzgCY7OmiZYrzFdXIchwe5sZuv6z3MLpz1nY" alt="Estructura Corporativa Sencilla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h4 class="font-bold text-sm text-slate-200">Layout Sencillo (Corporativo)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Especializado en landing pages corporativas, portafolios de servicios y contacto rápido.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden group hover:border-slate-800 transition-all">
+                <div class="h-40 bg-cover bg-center overflow-hidden">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTxQX7Hg5uITWKvvWTV1UOGLgTYZ1FIF0t_EdfQj4gbc4KBCmjyT60NrilP-qlYwib8F5wWiLe0awXGvZo" alt="E-commerce Store Digital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h4 class="font-bold text-sm text-slate-200">Layout E-commerce (Ventas)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Infraestructura comercial con carrito de compras integrado, inventario automático y checkout dinámico.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden group hover:border-slate-800 transition-all sm:col-span-2 lg:col-span-1">
+                <div class="h-40 bg-cover bg-center overflow-hidden">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQa6kN5ma45I1LeZdBbQLe4MtOKb-L8MMmlWZiXG_qjNkHiWFq1_Xgy27p8iAelomqYS5SQGbYYzBgN94I" alt="Dashboard Redes Sociales Integradas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h4 class="font-bold text-sm text-slate-200">Layout Premium (Completo)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Conexión de APIs automatizadas para la sincronización de feeds en redes sociales y píxeles de anuncios.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center space-y-3">
+        <p class="text-xs text-slate-500 font-medium">© 2026 Webprofesional. Creador de Sitios Inteligentes No-Code.</p>
+        <p class="text-[11px] text-slate-600">Contacto Directo: Central Telefónica +52 299 615 2757 | México</p>
+    </footer>
+
+    <script src="Java.js"></script>
+</body>
+</html>
