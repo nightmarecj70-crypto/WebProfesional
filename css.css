@@ -1,0 +1,28 @@
+/* Configuraciones base de control de transiciones y renderizado */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Efecto hover interactivo para los selectores de la app */
+select:focus {
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+
+/* Scrollbar estilizada y minimalista para el tono oscuro de la app */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #10b981;
+}
